@@ -26,4 +26,7 @@ typedef  struct
 
 int spider_analyticurl(url_t *);
 int spider_socketcreate(void);
-int spider_connection(url_t *,int);
+int spider_connection(url_t *u,int webfd);
+int spider_createhead(char *head,url_t *u);
+int spider_request(char *head,int webfd);
+int spider_response(url_t *u,int webfd);
