@@ -6,7 +6,7 @@ int main(void)
     url_t tmp;
     ssl_t *ssl;
     char head[4096];
-    int webfd;
+    int webfd,datafd;
     queue_t wque, yque;
     datafd = open("data.html", O_RDWR | O_CREAT, 0775);
     strcpy(url.url, "https://baike.baidu.com/item/linux/27050?fr=aladdin");
